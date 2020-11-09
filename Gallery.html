@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>CSGO Homepage</title>
+  <link href="D:\Tài liệu của Duy 2\web 2\assigment 1\image\15.png" rel="shortcut icon" type="image/x-icon">
+    <meta charset="utf-8">
+
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #more {display: none;}
+
+  html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+  </style>
+
+  <!-- iNSERT THE JAVASCRIPT CODE HERE -->
+  <script>
+    function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+  </script>
+</head>
+<br>
+<br>
+<br>
+<body style=" height: 800px">
+<nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+  <a class="navbar-brand" href="#"><img src="D:\Tài liệu của Duy 2\web 2\assigment 1\image\1.png" alt="Background1" width="300" height="90"></a>
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+  <a class="nav-link" href="Index.html">Home</a>
+  </li>
+    <li class="nav-item">
+  <a class="nav-link" href="About us 1.html">About Us</a>
+  </li>
+    <li class="nav-item">
+  <a class="nav-link" href="Gallery.html">Gallery</a>
+  </li>
+    <li class="nav-item">
+  <a class="nav-link" href="Contact.html">Contact</a>
+  </li>
+  <a class="nav-link" href="Blog.html">Blog</a>
+  </li>
+  </ul>
+  <nav class="navbar navbar-expand-sm bg-light navbar-dark">
+  <form class="form-inline" action="/action_page.php">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+    <button class="btn btn-success" type="submit">Search</button>
+  </form>
+</nav>
+</nav>
+<div class="row"> 
+  <div class="column">
+  <img src="D:\Tài liệu của Duy 2\web 2\assigment 1\image\9.jpg" style="width:610px;height:400px;">
+  <img src="D:\Tài liệu của Duy 2\web 2\assigment 1\image\12.jpg" style="width:610px;height:400px;">
+  </div>
+  <div class="column">
+  <img src="D:\Tài liệu của Duy 2\web 2\assigment 1\image\10.jpg" style="width:610px;height:400px;">
+  <img src="D:\Tài liệu của Duy 2\web 2\assigment 1\image\13.jpg" style="width:610px;height:400px;">
+  </div>  
+  <div class="column">
+  <img src="D:\Tài liệu của Duy 2\web 2\assigment 1\image\11.jpg" style="width:610px;height:400px;">
+  <img src="D:\Tài liệu của Duy 2\web 2\assigment 1\image\14.jpg" style="width:610px;height:400px;">
+  </div>
+</div>
+<style>
+
+.footer {
+  position: fixed;    
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+
+.fa {
+  padding: 5px;
+  font-size: 10px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 1px 1px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+</style>
+<div class="footer">
+  <br>
+<!-- Add font awesome icons -->
+<a href="https://www.facebook.com" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="https://www.google.com" class="fa fa-google"></a>
+<a href="https://www.youtube.com" class="fa fa-youtube"></a>
+<a href="https://www.instagram.com" class="fa fa-instagram"></a>
+
+  
+  <p class="pt-2"> copyright 2020 </p>
+
+</div>
+
+</body>
+
+</html>
